@@ -1,0 +1,60 @@
+$body-bg: #F5F5FB;
+$side-bg: #FFFFFF;
+$box-bg: #C4C4C4;
+$box-gap: 20px;
+$side-l-w: 200px;
+$side-r-w: 250px;
+body{
+    display: flex;
+    flex-direction: row;
+    .first-column{
+        padding: $box-gap;
+        border: 1px solid black;
+        height: 650px;
+        width: $side-l-w;
+        .header{
+            display: flex;
+            flex-direction: column;
+            .container{
+                display: flex;
+                .avatar{
+                    border: 1px solid black;
+                    width: 50px;
+                    height: 50px;
+                }
+                .logo{
+                    border: 1px solid black;
+                    width: 130px;
+                    height: 50px;
+                    margin-left: 30px;
+                }
+            }
+            .menu{
+                li ul{
+                    list-style: none;
+                    border-radius: 2px;
+                    border: 1px solid black;
+                    height: 20px;
+                    width: auto;
+                }
+            }
+            .img-site{
+                margin-top: 160px;
+                border-radius: 10px;
+                border: 1px solid black;
+                width: auto;
+                height: 200px;
+            }
+    }
+}
+    .second-column{
+        border: 1px solid black;
+        flex: 3;
+        background-color: $body-bg;
+
+    }
+    .third-column{
+        border: 1px solid black;
+        width: $side-r-w;
+    }
+}
